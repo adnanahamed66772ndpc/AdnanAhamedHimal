@@ -2,6 +2,8 @@
 
 A modern, animated personal portfolio built with React and TypeScript. Features smooth animations inspired by [React Bits](https://reactbits.dev/), a gooey navigation menu, and a responsive layout.
 
+**Live site:** [https://adnanahamed66772ndpc.github.io/AdnanAhamedHimal/](https://adnanahamed66772ndpc.github.io/AdnanAhamedHimal/)
+
 ---
 
 ## ✨ Features
@@ -57,11 +59,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
-Output is in the `dist/` folder. Preview the production build with:
+Output is in the `docs/` folder (used for GitHub Pages). Preview locally with:
 
 ```bash
 npm run preview
 ```
+
+### Deploy to GitHub Pages
+
+1. In your repo go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not "Deploy from a branch").
+3. Push to `main`; the workflow will build and deploy. Your site will be at:
+   **https://adnanahamed66772ndpc.github.io/AdnanAhamedHimal/**
 
 ---
 
