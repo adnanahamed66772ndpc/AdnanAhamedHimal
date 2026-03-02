@@ -768,3 +768,11 @@ main {
 .contact-link:hover {
   text-decoration: underline;
 }
+
+.contact-email-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}

@@ -1,4 +1,4 @@
-# Adnan — Portfolio
+# Adnan Ahamed Himal — Portfolio
 
 A modern, animated personal portfolio built with React and TypeScript. Features smooth animations inspired by [React Bits](https://reactbits.dev/), a gooey navigation menu, and a responsive layout.
 
@@ -98,4 +98,4 @@ MIT
 
 ---
 
-**Adnan** — Full-Stack Developer & Telecom System Builder
+**Adnan Ahamed Himal** — Full-Stack Developer & Telecom System Builder
