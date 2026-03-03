@@ -39,7 +39,7 @@ export default function Nav() {
       >
         <div className="nav-inner">
           <a href="#" className="nav-logo">
-            Portfolio
+            Adnan Ahamed Himal
           </a>
 
           {/* Desktop: gooey pill nav */}
