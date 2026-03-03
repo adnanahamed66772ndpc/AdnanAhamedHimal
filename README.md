@@ -6,7 +6,7 @@ A modern, animated personal portfolio built with React and TypeScript. Features 
 
 ---
 
-## ✨ Features
+## ✨ Features  
 
 - **Hero** — Animated intro with gradient background and clear call-to-actions
 - **About** — Profile summary and professional focus
