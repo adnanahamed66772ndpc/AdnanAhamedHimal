@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
+import ElectricBorder from "./ElectricBorder";
 
 const projects = [
   {
@@ -76,27 +77,33 @@ export default function Projects() {
           viewport={{ once: true, margin: "-60px" }}
         >
           {projects.map((project) => (
-            <motion.a
-              key={project.id}
-              href={project.href}
-              className={`project-card ${project.featured ? "project-card-featured" : ""}`}
-              variants={item}
-              whileHover={{ y: -8, transition: { duration: 0.2 } }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="project-card-glow" />
-              {project.featured && <span className="project-badge">Top project</span>}
-              <h3>{project.title}</h3>
-              {project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}
-              <p className="project-description">{project.description}</p>
-              <div className="project-tags">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.a>
+            <motion.div key={project.id} variants={item}>
+              <ElectricBorder
+                color={project.featured ? "#7df9ff" : "#a78bfa"}
+                speed={1}
+                chaos={0.12}
+                borderRadius={16}
+                style={{ borderRadius: 16 }}
+              >
+                <a
+                  href={project.href}
+                  className={`project-card project-card-electric ${project.featured ? "project-card-featured" : ""}`}
+                >
+                  <div className="project-card-glow" />
+                  {project.featured && <span className="project-badge">Top project</span>}
+                  <h3>{project.title}</h3>
+                  {project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-tags">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </a>
+              </ElectricBorder>
+            </motion.div>
           ))}
         </motion.div>
       </div>

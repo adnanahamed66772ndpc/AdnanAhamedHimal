@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
+import ElectricBorder from "./ElectricBorder";
 
 const skillGroups = [
   {
@@ -73,17 +74,23 @@ export default function Skills() {
           viewport={{ once: true, margin: "-60px" }}
         >
           {skillGroups.map((group) => (
-            <motion.div
-              key={group.title}
-              className="skill-card"
-              variants={item}
-            >
-              <h3 className="skill-card-title">{group.title}</h3>
-              <ul className="skill-list">
-                {group.items.map((skill) => (
-                  <li key={skill}>{skill}</li>
-                ))}
-              </ul>
+            <motion.div key={group.title} variants={item}>
+              <ElectricBorder
+                color="#a78bfa"
+                speed={1}
+                chaos={0.1}
+                borderRadius={12}
+                style={{ borderRadius: 12 }}
+              >
+                <div className="skill-card">
+                  <h3 className="skill-card-title">{group.title}</h3>
+                  <ul className="skill-list">
+                    {group.items.map((skill) => (
+                      <li key={skill}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+              </ElectricBorder>
             </motion.div>
           ))}
         </motion.div>
